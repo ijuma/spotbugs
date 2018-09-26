@@ -5,7 +5,7 @@ tasks.withType(Test) {
     }
     doFirst {
       // http://openjdk.java.net/jeps/223
-      if (System.getProperty("java.specification.version") == "9" || System.getProperty("java.specification.version") == "10") {
+      if (System.getProperty("java.specification.version") == "9" || System.getProperty("java.specification.version") == "10" || System.getProperty("java.specification.version") == "11") {
         jvmArgs = [
           '--add-opens', 'java.base/java.lang=ALL-UNNAMED'
         ]
